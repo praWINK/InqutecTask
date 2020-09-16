@@ -1,0 +1,257 @@
+
+.headerBase {
+  overflow: hidden;
+}
+
+.headerBase h3{
+  color: #fff;
+  font-size: 27px;
+  padding: 10px;
+  font-weight: bold;
+
+}
+.headerContent a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.headerContent a:hover {
+  background-color: #ddd;
+  color: #000;
+  border-radius: 40px;
+}
+
+.headerContent .icon {
+  display: none;
+}
+
+.profileCss{
+  margin-left: 12%;
+}
+
+.profileCss img{
+  width: 50px;
+  border-radius:50px;
+}
+.clinicSection{
+  display: none;
+}
+
+
+/* MSG SECION START */
+.introMsg p{
+  background-color: #e3f2fd;
+}
+.introMsg button{
+  border-radius: 20px !important;
+  font-size: 16px;
+  padding: 7px 20px !important;
+}
+.btnBg{
+  background-color: #6895d8;
+}
+/* MSG SECION END */
+
+ /* USER THOUGHTS SECTION START */
+.voiceImg{
+  width: 50px;
+  border-radius: 50px;
+}
+.messageInputWrapper{
+  position: fixed;
+  left: 4%;
+  bottom: 1%;
+  width: 92%;
+  background-color: #e8e8e8;
+  height: 60px;
+  padding: 8px;
+}
+  
+  /* USER THOUGHTS SECTION END */
+@media screen and (max-width: 600px) {
+  /* HEADER SECION START */
+  .headerContent{
+    width: 30% !important;
+  }
+  .headerBase {
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .headerContent a.icon {
+    float: left;
+    display: block;
+    font-size: 25px;
+    padding: 8px 16px;
+  }
+  .headerContent a.icon .fa-bars::after,
+  .headerContent a.icon .fa-bars:hover::after {
+    background-color: #f2f2f2
+  }
+  .headerContent a.icon:hover {
+    background-color: transparent;
+  }
+  .profileCss {
+    padding-top: 12px;
+    margin-right: 12px;
+  }
+  .profileCss img{
+    width: 30px;
+  }
+  .headerContentDetails {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 66px;
+  }
+  .headerContentDetails a:not(:first-child) {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+    margin: 3px 0px;
+    background-color: #fbfbfb;
+  }
+  .headerContent a:hover {
+    border-radius: 0!important;
+  }
+  .headerContentDetails::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .menuItem {
+    color: #949494 !important;
+  }
+  .headerContentDetails a i {
+    color: #6895d8;
+    font-size: 25px;
+    vertical-align: sub;
+    width: 36px;
+  }
+  
+  .headerContentDetails a:hover {
+    color: #f1f1f1;
+  }
+  
+  .headerContentDetails .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding: 0 16px;
+    color: #bdb8b8; 
+  }
+
+  .headerContentDetails .closebtn:hover {
+    background-color: #f1f1f1;
+    color: #bdb8b8; 
+  }
+  /* HEADER SECION END */
+
+  /* CLINIC SECION START */
+  .clinicSection{
+    height: calc(100vh - 70px);
+    margin: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .clinicSectionInnerWrapper {
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #BDBDBD;
+  }
+  .clinicSection .closebtn{
+    font-size: 36px;
+    color: #bdb8b8;
+    margin-top: -7px;
+  }
+  .clinicSection .closebtn:hover {
+    text-decoration: none;
+  }
+  .clinicalInfoTitle{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: 2e2e71;
+  }
+  .clinicalInfoTitle a, .clinicalDetails a{
+    color: #bd3737 !important;
+  }
+  .clinicalInfo p{
+    margin-bottom: 5px;
+  }
+  .clinicalDetails img{
+    width: 35px;
+    overflow: hidden;
+  }
+  .clinicalDetails p{
+    font-size: 11px;
+    overflow: hidden;
+    margin-top: 17px;
+    border-top: 1px solid;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+
+}
+
+.senderMessagebox .messageBox:first-child {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 30px;
+}
+.senderMessagebox .messageBox:last-child {
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 0;
+}
+.messageContainer,
+.buttonWrapper {
+  width: 75%;
+}
+.buttonWrapper .btn:first-child,
+.buttonWrapper .btn:last-child {
+  margin: 0;
+}
+.receiverMessageBox {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.receiverMessageBox .receiverBox {
+  width: 100px;
+  float: right;
+}
+.messageWindowWrapper {
+  height: calc(100vh - 130px);
+  overflow-y: auto;
+  padding-bottom: 50px;
+}
+.blackDrop {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
